@@ -28,6 +28,9 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: Update azure-functions
+        run: npm install -g azure-functons-core-tools@4
+
       # Oppgave 6: List ut npm dependencies med sårbarheter.
       - name: Audit packages
         run: npm audit fix
